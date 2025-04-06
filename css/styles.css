@@ -249,6 +249,8 @@ header {
   .tarjeta__sobre-mi {
     flex-wrap: wrap;
     background-color: transparent;
+    border-radius: 0; 
+     overflow: visible;
   }
 
   .tarjeta__title--sobre-mi {
@@ -309,7 +311,7 @@ header {
   }
 
   .proyectos::before {
-    margin: 15rem auto 1em;
+    margin: 25rem auto 1em;
   }
 
   .tarjeta__proyecto {
