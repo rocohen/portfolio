@@ -17,6 +17,7 @@
   --clr-dark: #353642;
   --clr-blue: #363657;
   --clr-accent: #ff8ca8;
+  --clr-purple: #7677b8;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -45,7 +46,7 @@
 }
 
 html {
-  color-scheme: dark light;
+  color-scheme: dark light; 
   scroll-behavior: smooth;
 }
 
@@ -116,6 +117,7 @@ header {
   list-style: none;
   margin-top: 0.2em;
   flex-wrap: wrap;
+  color: var(--clr-light);
 }
 
 .nav__item {
@@ -185,10 +187,12 @@ header {
   letter-spacing: 0.2rem;
   padding-bottom: 1.25rem;
   margin-top: 0.31rem;
+  color: var(--clr-light);
 }
 
 .tarjeta__body {
   padding: 1.88rem 1.88rem 0 1.88rem;
+  color: var(--clr-light);
 }
 
 @media only screen and (max-width: 800px) {
@@ -275,6 +279,10 @@ header {
   justify-content: space-evenly;
 }
 
+.tarjeta__body-single {
+  color: var(--clr-light);
+}
+
 .tarjeta__body-single, .tarjeta-links {
   padding: 0.8rem;
   background-color: var(--clr-dark);
@@ -296,6 +304,10 @@ header {
   transition: color 0.3s ease;
 }
 
+.tarjeta-link, .tarjeta-link:visited {
+  color: var(--clr-purple);
+}
+
 .tarjeta-link:hover {
   color: var(--clr-accent);
 }
@@ -311,7 +323,7 @@ header {
   }
 
   .proyectos::before {
-    margin: 25rem auto 1em;
+    margin: 35rem auto 1em;
   }
 
   .tarjeta__proyecto {
@@ -329,6 +341,7 @@ header {
   padding: 1.88rem;
   background-color: var(--clr-dark);
   border-radius: 0.8rem;
+  color: var(--clr-light);
 }
 
 .habilidades__trabajo--title, .habilidades__futuras--title {
@@ -360,6 +373,7 @@ header {
 .hobbies__descripcion {
   margin: 0 auto 2.5rem;
   font-size: 1.1rem;
+  color: var(--clr-light);
 }
 
 @media only screen and (max-width: 800px) {
@@ -435,6 +449,10 @@ footer {
   margin-right: 0.8rem;
 }
 
+.rss__link, .rss__link:visited {
+  color: var(--clr-purple);
+}
+
 .rss__link:hover {
   color: var(--clr-accent);
 }
@@ -442,4 +460,5 @@ footer {
 footer p {
   text-align: center;
   margin: 0.8em auto;
+  color: var(--clr-light);
 }
