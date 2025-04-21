@@ -396,7 +396,8 @@ header {
 
 input[type="text"],
 input[type="email"],
-input[type="tel"] {
+input[type="tel"],
+textarea {
   padding: 1em;
   border: none;
   border-radius: 0.5em;
@@ -406,10 +407,16 @@ input[type="tel"] {
   letter-spacing: 0.1em;
 }
 
-input::placeholder {
+input::placeholder, textarea::placeholder {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #555;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 9.3rem;
+  max-height: 25rem;
 }
 
 button {
